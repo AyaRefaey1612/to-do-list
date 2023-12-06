@@ -1,0 +1,142 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 780px;
+  margin: 10px auto;
+  position: relative;
+  background-image: url(images/Printable-To-Do-List-List-25-791x1024.jpg);
+  height: 1000px;
+}
+
+input{
+  width: 778px;
+  height: 80px;
+  border: 25px solid #e91e633d;
+  background-color: #ffc0cb1f;
+}
+input:focus{
+  outline: none;;
+}
+
+.there-are-no-tasks{
+  width: 685px; 
+  height: 80px;
+  border: 10px solid rgb(158 158 158 / 8%);
+  background-color: #ffc0cb1f; 
+  height:60px; 
+  line-height: 39px; 
+  cursor:pointer; 
+  margin-bottom: 4px; 
+  padding-left: 11px;
+}
+.plus{
+    color: #9E9E9E;
+    font-size: 50px;
+    border: 7px solid #e91e633d;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+    height: 51px;
+    line-height: 42px;
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    background-color:  #e91e63;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.tasks{
+  margin: 91px;
+  width: 684px;
+  margin-left: 53px;
+  position: relative;
+  
+}
+
+.information{
+  display: flex;
+  justify-content: space-around;
+  width: 659px;
+  justify-items: flex-end;
+  position: fixed;
+  bottom: 25px;
+}
+
+
+.tasks-no{
+  position: relative;
+}
+
+
+.Completed {
+  float: right;
+  position: relative;
+  left: 81px;
+}
+.tasks-no span,
+.Completed span{
+    background-color: #9E9E9E;
+    color: white;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 26%;
+    text-align: center;
+    align-items: center;
+    
+}
+.tasks-name:first-child{
+  position: relative;
+}
+div.finish{
+ text-decoration: line-through;
+}
+
+
+.plus:hover{
+  transform: rotate(40deg)scale(1.1);
+}
+
+.swal{
+  background-color: black;
+  color: white;
+}
+
+.swal-button{
+  background-color:#eee;
+  color: black;
+}
+
+.swal-text{
+  color: palevioletred;
+}
+
+.swal5-text{
+  color: palevioletred !important;
+}
+
+.delete-all{
+  background-color:#9E9E9E;
+  border-radius: 5px; 
+}
+.Complete-all{
+ background-color: #e91e63;
+ border-radius: 5px; 
+}
+
+.last-buttons{
+position: absolute;
+top: 157px;
+left: 294px;
+}
+
