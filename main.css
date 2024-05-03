@@ -5,7 +5,7 @@
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: bisque;
   padding: 0;
   margin: 0;
 }
@@ -14,7 +14,7 @@ body{
   width: 780px;
   margin: 10px auto;
   position: relative;
-  background-image: url(images/Printable-To-Do-List-List-25-791x1024.jpg);
+  background-color: bisque;
   height: 1000px;
 }
 
@@ -29,12 +29,22 @@ input:focus{
 }
 
 .there-are-no-tasks{
-  width: 685px; 
+  width: 90%; 
   height: 80px;
   border: 10px solid rgb(158 158 158 / 8%);
   background-color: #ffc0cb1f; 
   height:60px; 
   line-height: 39px; 
+  cursor:pointer; 
+  margin-bottom: 4px; 
+  padding-left: 11px;
+}
+ div.task-name {
+  width: 686px;
+  height: 80px; 
+  border: 10px solid rgb(158 158 158 / 8%); 
+  background-color: #ffc0cb1f; 
+  height:60px; line-height: 39px; 
   cursor:pointer; 
   margin-bottom: 4px; 
   padding-left: 11px;
@@ -65,9 +75,8 @@ input:focus{
 
 .information{
   display: flex;
-  justify-content: space-around;
-  width: 659px;
-  justify-items: flex-end;
+  justify-content: flex-end;
+  width: 90%;
   position: fixed;
   bottom: 25px;
 }
@@ -140,3 +149,132 @@ top: 157px;
 left: 294px;
 }
 
+@media(max-width:480px){
+  .container {
+    width: 100%;
+    margin: 0;
+    height: 550px;
+}
+
+  input {
+    width: 100%;
+   height: 73px;
+  }
+
+  .tasks {
+   width: 95%;
+   margin: 3px 0;
+  }
+
+  .there-are-no-tasks {
+    width: 316px;
+  }
+
+  .tasks div div.task-name {
+    width: 100%;
+  }
+
+
+  .Completed {
+   left: 0;
+  }
+
+  .last-buttons {
+   position: absolute;
+   top: 10%;
+   left: 26%;
+  }
+}
+
+@media(min-width:481px) and (max-width:767px){
+  .container{
+  height: 611px;
+  width: 85%;
+  }
+  input {
+    width: 100%;
+  }
+
+  .tasks {
+    width: 85%;
+    top: -12%;
+  }
+
+  .there-are-no-tasks {
+    width: 100%;
+  }
+
+   div.task-name {
+    width: 100%;
+  }
+  .last-buttons {
+    top: 10%;
+    left: 36%;
+  }
+
+  .Completed {
+   left: 0px;
+  }
+
+
+}
+
+@media(min-width:768px) and (max-width:1023px){
+  .container{
+    height: 611px;
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  } 
+
+  div.task-name {
+    width: 100%;
+  }
+  .tasks {
+    width: 90%;
+    top:-14%;
+  }
+
+  .last-buttons {
+    top: 10%;
+    left: 40%;
+  }
+
+  .Completed {
+   left: 0px;
+  }
+
+}
+@media (min-width: 1024px){
+  .container{
+    height: 626px;
+    width: 95%;
+  }
+
+  .tasks {
+    width: 90%;
+    top: -13%;
+}
+
+  input {
+    width: 100%;
+ }
+
+  div.task-name {
+   width: 100%;
+}
+
+
+  .Completed {
+    left: 0px;
+ }
+
+ .last-buttons {
+  top: 11%;
+  left: 41%;
+}
+
+
+}
