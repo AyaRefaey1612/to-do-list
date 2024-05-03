@@ -52,7 +52,7 @@ function create(){
  task.className="task-name";
  let emptyDiv=document.createElement("div");
  emptyDiv.style.cssText="margin-bottom: -11px;"
- task.style.cssText ="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
+//  task.style.cssText ="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
  let del=document.createElement("button");
  del.appendChild(document.createTextNode("DELETE"));
  del.style.cssText="position: relative;bottom: 46px;;right:8px;float:right; color: white;background-color: gray;border: grey 1px solid;border-radius: 12px; width: 82px; height: 23px;"
@@ -114,7 +114,7 @@ function noTasks(){
   let div=document.createElement("div");
   div.className="no-taks";
   div.textContent="There are no tasks";
-  div.style.cssText="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
+  // div.style.cssText="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
   tasks.appendChild(div);
 }
 
@@ -151,10 +151,10 @@ function createElementsFromLocal(item){
   task.className="task-name";
   let emptyDiv=document.createElement("div");
   emptyDiv.style.cssText="margin-bottom: -11px;"
-  task.style.cssText ="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
+  // task.style.cssText ="width: 685px; height: 80px; border: 10px solid rgb(158 158 158 / 8%); background-color: #ffc0cb1f; height:60px; line-height: 39px; cursor:pointer; margin-bottom: 4px; padding-left: 11px;"
   let del=document.createElement("button");
   del.appendChild(document.createTextNode("DELETE"));
-  del.style.cssText="position: relative;bottom: 46px;;right:8px;float:right; color: white;background-color: gray;border: grey 1px solid;border-radius: 12px; width: 82px; height: 23px;"
+  del.style.cssText="position: relative;bottom: 46px;float:right; color: white;background-color: gray;border: grey 1px solid;border-radius: 12px; width: 82px; height: 23px;"
   emptyDiv.appendChild(task);
   emptyDiv.appendChild(del);
   tasks.appendChild(emptyDiv);
